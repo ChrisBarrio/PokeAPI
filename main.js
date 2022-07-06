@@ -85,11 +85,11 @@ function createPokemon(pokemon) {
     
 
     //cardBack
-    const cardBack = document.createElement('div')
-    cardBack.classList.add('pokemon-block-back')
-    cardBack.textContent = 'parte de atras'
+    // const cardBack = document.createElement('div')
+    // cardBack.classList.add('pokemon-block-back')
+    // cardBack.textContent = 'parte de atras'
 
-    card.appendChild(cardBack);
+    // card.appendChild(cardBack);
 }
 
 function removeChildNodes(parent) {

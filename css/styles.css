@@ -55,7 +55,7 @@ main {
   margin: 1rem auto;
   padding: 2rem;
   width: 70%;
-  min-width: 500px;
+  min-width: 31.25rem;
   border: 2px solid;
   background-color: var(--red-light);
   letter-spacing: .2rem;
@@ -80,8 +80,8 @@ main {
 
 .pokemon-block {
   background-color: var(--white);
-  border: 2px solid;
-  border-radius: 4rem;
+  border: 4px solid var(--red);
+  border-radius: 3rem;
 }
 
 .pokemon-block figure {
@@ -127,4 +127,43 @@ main {
   color: var(--white);
   font-size: var(--FontSize-m);
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 60.5%;
+  }
+  main {
+    width: 95%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 55.5%;
+  }
+  main {
+    width: 95%;
+  }
+}
+
+@media (max-width: 393px) {
+  html {
+    font-size: 55.5%;
+  }
+  main {
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 55.5%;
+  }
+  main {
+    width: 95%;
+  }
+  .pokemon-block {
+    width: 90%;
+  }
 }
