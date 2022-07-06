@@ -97,7 +97,9 @@ main{
 }
 
 .page-item{
-    margin: 1rem;
+    margin: 1rem 5rem;
+    width: 10rem;
+    text-align: center;
     & a{
         background-color: var(--red);
         color: var(--white);
@@ -126,6 +128,17 @@ main{
     main {
         width: 95%;
     }
+    .page-item{
+        margin: 1rem 2rem;
+        width: 10rem;
+        text-align: center;
+        & a{
+            background-color: var(--red);
+            color: var(--white);
+            font-size: var(--FontSize-m);
+            cursor: pointer; 
+        }
+    }
 }
 @media (max-width: 393px) {
     html {
@@ -133,6 +146,17 @@ main{
     }
     main {
         width: 95%;
+    }
+    .page-item{
+        margin: 1rem 2rem;
+        width: 10rem;
+        text-align: center;
+        & a{
+            background-color: var(--red);
+            color: var(--white);
+            font-size: var(--FontSize-m);
+            cursor: pointer; 
+        }
     }
 }
 @media (max-width: 320px) {
@@ -145,6 +169,7 @@ main{
     .pokemon-block{
     width: 90%;
     }
+    
 }
 
 
