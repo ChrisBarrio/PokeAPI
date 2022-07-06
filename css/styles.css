@@ -1,0 +1,130 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+:root {
+  --main-color:#d3ad7f;
+  --black:#13131a;
+  --white:#ffffff;
+  --red:#cb3434;
+  --red-light:#cb343449;
+  --border:.1rem solid rgba(255,255,255,.3);
+  --FontSize-s: 1rem;
+  --FontSize-m: 1.2rem;
+  --FontSize-l: 2rem;
+  --FontSize-xl: 2.375rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  background-color: var(--red);
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  color: var(--white);
+}
+
+main {
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 70%;
+  min-width: 500px;
+  border: 2px solid;
+  background-color: var(--red-light);
+  letter-spacing: .2rem;
+  font-size: var(--FontSize-m);
+}
+
+.container-principal {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.spinner div {
+  width: 100%;
+}
+
+.spinner div img {
+  width: 100%;
+}
+
+.pokemon-block {
+  background-color: var(--white);
+  border: 2px solid;
+  border-radius: 4rem;
+}
+
+.pokemon-block figure {
+  background-color: transparent;
+  position: relative;
+  margin: 0 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pokemon-block figure img {
+  border-radius: 100%;
+  border: 2px solid;
+  padding: .2rem;
+  width: 15rem;
+  height: 15rem;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.pokemon-block p {
+  margin: 2rem;
+  text-align: center;
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.pokemon-block-back:hover .pokemon-block {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.page-item {
+  margin: 1rem;
+}
+
+.page-item a {
+  background-color: var(--red);
+  color: var(--white);
+  font-size: var(--FontSize-m);
+  cursor: pointer;
+}
