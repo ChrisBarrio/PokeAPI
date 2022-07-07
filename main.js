@@ -75,11 +75,40 @@ function createPokemon(pokemon) {
     const name = document.createElement('p')
     name.classList.add('name')
     name.textContent = pokemon.name //
+    
+    const type = document.createElement('p')
+    type.classList.add('type')
+    type.textContent = pokemon.types[0].type.name //
+
+    const containerStats = document.createElement('div')
+    containerStats.classList.add('container-stats')
+
+    
+    const hp = document.createElement('p')
+    hp.classList.add('hp')
+    hp.classList.add('text')
+    hp.textContent = `♥️ ${pokemon.stats[0].stat.name} ${pokemon.stats[0].base_stat}` //
+    
+    const attack = document.createElement('p')
+    attack.classList.add('attack')
+    attack.classList.add('text')
+    attack.textContent = `⚔️ ${pokemon.stats[1].stat.name} ${pokemon.stats[1].base_stat}` //
+    
+    const defense = document.createElement('p')
+    defense.classList.add('defense')
+    defense.classList.add('text')
+    defense.textContent = `🛡️ ${pokemon.stats[2].stat.name} ${pokemon.stats[2].base_stat}` //
 
     //segun como lo ponga establezco el orden
     card.appendChild(spriteContainer)
     card.appendChild(number)
     card.appendChild(name)
+    card.appendChild(type)
+    card.appendChild(containerStats)
+    containerStats.appendChild(hp)
+    containerStats.appendChild(attack)
+    containerStats.appendChild(defense)
+
 
     containerCards.appendChild(card)
     
